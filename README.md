@@ -3,12 +3,14 @@
 Modern Frontend React Application Architecture using SpaceX's Rocket Launches API
 
 This project demonstrates:
+
 - decent React application configuration using Vite
 - Typescript for static analysis
 - CSS modules
 - ESLint for the enforcement of best practices
 - Unit testing with React testing library
 - End-to-end testing with Cypress
+- Custom error boundary
 - Component library (Atomic Design) using Storybook
 - Web Accessibility for assistive technologies (e.g. screen reader) and keyboard navigation
 
