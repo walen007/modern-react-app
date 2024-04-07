@@ -1,0 +1,14 @@
+.DS_Store
+
+node_modules
+dist
+dist-ssr
+*.local
+
+yarn-debug.log*
+yarn-error.log*
+coverage
+
+.dev_tools
+.vscode
+storybook-static
