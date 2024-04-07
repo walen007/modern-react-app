@@ -1,0 +1,14 @@
+.error {
+  color: var(--error-color);
+  font-weight: bold;
+  border: 1px solid var(--error-color);
+  padding: 0.7rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.searchResultHeading {
+  margin-bottom: inherit;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}

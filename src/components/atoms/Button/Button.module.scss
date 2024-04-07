@@ -1,0 +1,19 @@
+@use '@styles/base';
+
+.btnSearch {
+  color: var(--font-color);
+  background-color: var(--cards-bg);
+  min-width: 6rem;
+
+  &:active {
+    background-color: var(--btn-active);
+  }
+
+  .loading {
+    @include base.flex-row;
+
+    & > * {
+      margin: 0 0.3rem;
+    }
+  }
+}

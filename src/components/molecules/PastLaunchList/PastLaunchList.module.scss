@@ -1,0 +1,46 @@
+@use '@styles/base';
+
+.launchList {
+  @include base.flex-row;
+
+  .launchItem {
+    width: 18rem;
+    padding: 1.2rem;
+    background-color: var(--cards-bg);
+    -webkit-box-shadow: 6px 5px 20px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 6px 5px 20px 0px rgba(0, 0, 0, 0.36);
+
+    .launchName {
+      font-size: 1.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .launchId {
+      font-size: 0.9rem;
+    }
+  }
+
+  // Select children between the first and the last children
+  :first-child ~ *:not(:last-child) {
+    margin: 0 0.8rem;
+  }
+}
+
+@include base.max(lg, -78) {
+  .launchList {
+    @include base.flex-col;
+    width: 100%;
+
+    .launchItem {
+      width: 100%;
+    }
+
+    :first-child ~ *:not(:last-child) {
+      margin: 0.8rem 0;
+    }
+  }
+}

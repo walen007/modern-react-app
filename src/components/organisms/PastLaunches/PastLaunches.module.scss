@@ -1,0 +1,13 @@
+@use '@styles/base';
+
+.pastLaunches {
+  @include base.flex-col;
+  max-width: 56rem;
+  margin-top: 2rem;
+}
+
+@include base.max(lg, -78) {
+  .pastLaunches {
+    width: 100%;
+  }
+}
