@@ -1,0 +1,45 @@
+@use '@styles/base';
+
+.searchBox {
+  @include base.flex-row;
+  max-width: 56rem;
+
+  & > * {
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+  }
+
+  & > :first-child {
+    border: 1px solid var(--font-color);
+  }
+
+  & > :nth-child(2) {
+    color: var(--app-white);
+    background-color: var(--btn-color);
+
+    &:focus {
+      outline: 0.3rem solid var(--btn-outline);
+    }
+
+    &:active {
+      background-color: var(--btn-active);
+    }
+  }
+}
+
+@include base.max(md, -148) {
+  .searchBox {
+    @include base.flex-col;
+    width: 100%;
+
+    & > * {
+      margin: 0;
+      width: 100%;
+    }
+
+    :first-child {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

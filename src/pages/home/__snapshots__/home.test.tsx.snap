@@ -1,0 +1,105 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Home /> > --- should render home page lazy 1`] = `
+<body>
+  <div>
+    <section
+      class="_searchBox_c9479e"
+    >
+      <input
+        aria-placeholder="Enter Launch ID"
+        class="_txtSearch_0b168a"
+        data-testid="search-text"
+        placeholder="Enter Launch ID"
+        tabindex="5"
+        type="search"
+      />
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="_btnSearch_723963"
+        data-testid="submit-button"
+        tabindex="6"
+      >
+        Search
+      </button>
+    </section>
+    <section
+      class="_pastLaunches_79102b"
+    >
+      <h2
+        class="_heading_9b5d47"
+        tabindex="23"
+      >
+        Past launches
+      </h2>
+      <ul
+        aria-description="List of SpaceX past launches"
+        class="_launchList_e86419"
+        data-testid="past-launch-list"
+      >
+        <li
+          aria-description="SpaceX past launches list item"
+          aria-live="polite"
+          class="_launchItem_e86419"
+          tabindex="25"
+        >
+          <div
+            class="_launchName_e86419"
+            tabindex="26"
+          >
+            Crew-5
+          </div>
+          <div
+            class="_launchId_e86419"
+            tabindex="27"
+          >
+            ID: 
+            62dd70d5202306255024d139
+          </div>
+        </li>
+        <li
+          aria-description="SpaceX past launches list item"
+          aria-live="polite"
+          class="_launchItem_e86419"
+          tabindex="28"
+        >
+          <div
+            class="_launchName_e86419"
+            tabindex="29"
+          >
+            Starlink 4-35 (v1.5)
+          </div>
+          <div
+            class="_launchId_e86419"
+            tabindex="30"
+          >
+            ID: 
+            63161339ffc78f3b8567070c
+          </div>
+        </li>
+        <li
+          aria-description="SpaceX past launches list item"
+          aria-live="polite"
+          class="_launchItem_e86419"
+          tabindex="31"
+        >
+          <div
+            class="_launchName_e86419"
+            tabindex="32"
+          >
+            Starlink 4-34 (v1.5)
+          </div>
+          <div
+            class="_launchId_e86419"
+            tabindex="33"
+          >
+            ID: 
+            63161329ffc78f3b8567070b
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+`;

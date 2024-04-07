@@ -1,0 +1,87 @@
+@use '@styles/base';
+
+.selectedLaunch {
+  width: 100%;
+  max-width: 56rem;
+
+  .selectedInfo {
+    @include base.flex-col;
+    justify-content: space-between;
+    height: 17rem;
+    background-color: var(--cards-bg);
+    -webkit-box-shadow: 6px 5px 20px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 6px 5px 20px 0px rgba(0, 0, 0, 0.36);
+
+    .topInfo,
+    .bottomInfo {
+      @include base.flex-row;
+      justify-content: space-between;
+      padding: 1rem;
+      width: 100%;
+    }
+
+    .topInfo {
+      position: relative;
+
+      .selectedName {
+        padding: 0;
+        width: calc(100% - 2rem);
+        font-size: 3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      :nth-child(2) {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .bottomInfo {
+      .elapsedTime {
+        font-size: 1.5rem;
+      }
+
+      .launchId {
+        padding: 1rem;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@include base.max(md, 12) {
+  .selectedLaunch {
+    .selectedInfo {
+      height: initial;
+
+      .topInfo,
+      .bottomInfo {
+        @include base.flex-col;
+        align-items: flex-start;
+      }
+
+      .topInfo {
+        position: relative;
+        margin-bottom: 2rem;
+
+        .selectedName {
+          font-size: 2rem;
+        }
+      }
+
+      .bottomInfo {
+        .elapsedTime {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .launchId {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
