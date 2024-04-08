@@ -1,6 +1,6 @@
 {
-  "name": "modern-frontend-react-app",
-  "description": "Modern Frontend React Application Architecture",
+  "name": "frontend-react-app",
+  "description": "Frontend React Application Architecture",
   "private": true,
   "version": "0.6.5",
   "type": "module",
