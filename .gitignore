@@ -12,3 +12,4 @@ coverage
 .dev_tools
 .vscode
 storybook-static
+yarn.lock
