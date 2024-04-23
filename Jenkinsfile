@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label 'dynamic-nodejs-agent'
+            label 'dynamic-nodejs-agent.v2'
             }
       }
     triggers {
