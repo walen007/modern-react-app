@@ -1,34 +1,50 @@
 pipeline {
     agent { 
         node {
-            label 'docker_agent_node'
+            label 'dynamic-nodejs-agent'
             }
       }
     triggers {
         pollSCM "*/5 * * * *"
     }
     stages {
-        stage('Build') {
+        stage('Setup') {
             steps {
-                echo "Building.."
+                echo "Setting up build.."
                 sh '''
-                echo "doing build stuff.."
+                yarn
+                '''
+            }
+        }
+        stage('Lint') {
+            steps {
+                echo "Running lint.."
+                sh '''
+                yarn lint
                 '''
             }
         }
         stage('Test') {
             steps {
-                echo "Testing.."
+                echo "Running unit tests.."
                 sh '''
-                echo "doing test stuff.."
+                yarn test
                 '''
             }
         }
-        stage('Deliver') {
+        stage('Build') {
+            steps {
+                echo "Building application.."
+                sh '''
+                yarn build
+                '''
+            }
+        }
+        stage('Deploy') {
             steps {
                 echo 'Deliver....'
                 sh '''
-                echo "doing delivery stuff.."
+                echo "deploying application to dev & staging environments"
                 '''
             }
         }
