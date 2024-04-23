@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Setting up build.."
                 sh '''
+                rm yarn.lock
                 yarn
                 '''
             }
